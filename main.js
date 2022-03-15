@@ -2,9 +2,13 @@ let ElForms = document.querySelector("#formss")
 let ElFirstNameinput = document.querySelector("#f-name")
 let ElLastNameinput = document.querySelector("#l-name")
 let ElTelinput = document.querySelector("#tell")
-let ElSellect = document.querySelector("#sellection")
+let elSellect = document.querySelector("#sellection")
 
-ElSellect.addEventListener("click",filteringg)
+let elFriendBtn = document.querySelector("#friend")
+let elFamilkBtn = document.querySelector("#family")
+let elClassmatekBtn = document.querySelector("#classmad")
+
+// ElSellect.addEventListener("click",filteringg)
 
 // let ElName = document.querySelector("#namee")
 // let ElFName = document.querySelector("#familia")
@@ -27,38 +31,42 @@ ElForms.addEventListener('submit', (e) => {
   <td id="familia">${ElFName}</td>
   <td id="telnumber">${ElTel}</td>`
   Elbody.appendChild(tr)
-
+  
   ElNumber++
-
+  
   ElFirstNameinput.value = ""
   ElLastNameinput.value = ""
   ElTelinput.value = ""
 
-  // let ism = {
-  //   name: `${ElName}`
-  // }
-  // let familyada = {
-  //   lastname :`${ElFName}`
-  // }
-  // let teln ={
-  //   telefon:``
-  // }
 
+  tr.className = elSellect.value;
+  console.log(tr.className);
+elFriendBtn.addEventListener("click", () =>{
+    if(tr.className == 'friend') {
+      tr.style.display = "flex !importand"
+    }
+    else {
+      tr.style.display = "none"
+    }
+})
+elFamilkBtn.addEventListener("click", () =>{
+  if(tr.className == 'family') {
+    tr.style.display = "flex !importand"
+  }
+  else {
+    tr.style.display = "none"
+  }
+})
+elClassmatekBtn.addEventListener("click", () =>{
+  if(tr.className == 'classmates') {
+    tr.style.display = "flex !importand"
+  }
+  else {
+    tr.style.display = "none"
+  }
 })
 
-function filteringg(e) {
-  const selectchilds = ElSellect.childNodes
-  for(let i = 0; i < selectchilds.length; i++) {
-    const todo = selectchilds[i]
-    switch (e.target.value){
-      case 'all':
-      // case (friend)
-
-    }
-  }
-}
-
-
+})
 
 
 
