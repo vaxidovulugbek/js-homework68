@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #2b2652 !important;
+  background-color: #41397e !important;
+  background-image: url("https://www.cifinancial.com/ci-assante/ca/en/contact-us/_jcr_content/root/responsivegrid/container_main/container/container/teaser_custom.coreimg.png/1645537131197/img-contact-teaser-city.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* 
 .content {
@@ -131,7 +134,7 @@ flex-direction: column;
 
 
 .father {
-  border: 4px solid #14192e;
+  border: 2px solid #14192e;
   background-color: #fff;
   border-radius: 8px;
   padding: 14px;
