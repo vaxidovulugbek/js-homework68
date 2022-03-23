@@ -8,12 +8,8 @@ let elFriendBtn = document.querySelector("#friend")
 let elFamilkBtn = document.querySelector("#family")
 let elClassmatekBtn = document.querySelector("#classmad")
 
-// ElSellect.addEventListener("click",filteringg)
+let obj = []
 
-// let ElName = document.querySelector("#namee")
-// let ElFName = document.querySelector("#familia")
-// let ElTel = document.querySelector("#telnumber")
-// let ElNumber = document.querySelector("#numm")
 
 let ElNumber= 1;
 let Elbody = document.querySelector("#elbody")
@@ -40,7 +36,23 @@ ElForms.addEventListener('submit', (e) => {
 
 
   tr.className = elSellect.value;
-  console.log(tr.className);
+  // console.log(tr.className);
+
+
+  // let newarr = [];
+  // for (let i = 0; i < tr.length; i++) {
+  //     newarr.push(tr[i]);
+  // }
+  // console.log(newarr);
+
+
+
+
+
+
+
+  // shu joyidan sortirofka ketadi
+
 elFriendBtn.addEventListener("click", () =>{
     if(tr.className == 'friend') {
       tr.style.display = "flex !importand"

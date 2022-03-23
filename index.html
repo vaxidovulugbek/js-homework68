@@ -19,9 +19,9 @@
         
       <select class="form-select"  id="sellection" aria-label="Default select example">
         <!-- <option value="all">All</option> -->
-        <option class="friendk" value="friend">Friends</option>
-        <option class="familk" value="family">Family</option>
-        <option class="classmatek" value="classmates">Classmates</option>
+        <option id="friendoption" class="friendk" value="friend">Friends</option>
+        <option id="familyoption" class="familk" value="family">Family</option>
+        <option id="classmateoption" class="classmatek" value="classmates">Classmates</option>
       </select>
         <button id="buttonl" type="submit">Send</button>
       </form>
@@ -35,8 +35,8 @@
       </div>
 
 
-      <div>
-        <table class="table table-striped">
+      <!-- <div>
+         <table class="table table-striped">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -48,12 +48,21 @@
           <tbody id="elbody">
             
           </tbody>
-        </table>
-      </div>
+        </table> 
+      </div> -->
+
+      
+      <ul id="list" class="lists">
+        <li id="item1" class="items">
+          <p class="pi" id="fname-output">First name</p>
+          <p class="pi" id="lname-output">Last name</p>
+          <p class="pi" id="tel-output">Tel</p>
+        </li>
+      </ul>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+  <script src="array.js"></script>
 </body>
 </html>
 
